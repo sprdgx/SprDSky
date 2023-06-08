@@ -138,7 +138,7 @@ body {
   width: 164px;
   height: 164px;
   background-size: contain;
-  background-image: url("/images/wawa.svg");
+  background-image: url("../public/images/SprD.svg");
   animation: rotate 10s linear infinite;
 }
 
