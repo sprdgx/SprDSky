@@ -9,93 +9,101 @@ import React, { useRef } from "react";
 
 
 export function Airplane(props) {
-  const { nodes, materials } = useGLTF("./models/airplane/CyberCar.glb");
+  const { nodes, materials } = useGLTF("./models/airplane/CloudShip.glb");
 
 
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
-        <group scale={0.001}>
-          <mesh geometry={nodes.mesh_id8_90_0.geometry} material={materials.material} position={[3370.435, 2367.538, 1109.994]} rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={1309.312} />
+      <group rotation={[-Math.PI / 2, 0, 0]}>
+        <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+          <group position={[0, 59.417, 0]} rotation={[-Math.PI / 2, -1.57, 0]}>
+            <mesh geometry={nodes.balloon_flying_ship_balloon_flying_ship_0.geometry} material={nodes.balloon_flying_ship_balloon_flying_ship_0.material} position={[0.148, -0.283, -28.919]} />
+          </group>
+          <group position={[-9.264, -8.344, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={0.661}>
+            <mesh geometry={nodes.flying_ship_flying_ship_0.geometry} material={nodes.flying_ship_flying_ship_0.material} position={[4.55, 0, 8.344]} />
+          </group>
+          <group position={[4.152, -1.003, 0.005]} rotation={[-Math.PI / 2, 0, 0]}>
+            <mesh geometry={nodes.cabin_flying_ship_cabin_flying_ship_0.geometry} material={nodes.cabin_flying_ship_cabin_flying_ship_0.material} position={[0, 0.005, 1]} />
+          </group>
+          <group position={[4.152, -1.003, 0.005]} rotation={[-Math.PI / 2, 0, 0]}>
+            <mesh geometry={nodes.window_flying_ship_window_door_flying_ship_0.geometry} material={nodes.window_flying_ship_window_door_flying_ship_0.material} position={[0, 0.005, 1]} />
+          </group>
+          <group position={[4.152, -1.003, 0.005]} rotation={[-Math.PI / 2, 0, 0]}>
+            <mesh geometry={nodes.door_part_flying_ship_window_door_flying_ship_0.geometry} material={nodes.door_part_flying_ship_window_door_flying_ship_0.material} position={[0, 0.005, 1]} />
+          </group>
+          <group position={[17.24, 0.545, -2.16]} rotation={[-Math.PI / 2, 0, 0]}>
+            <group position={[-13.088, -2.165, -1.549]}>
+              <mesh geometry={nodes.door_door_part_3_flying_ship_0.geometry} material={nodes.door_door_part_3_flying_ship_0.material} />
+              <mesh geometry={nodes.door_door_part_4_flying_ship_0.geometry} material={nodes.door_door_part_4_flying_ship_0.material} />
+              <mesh geometry={nodes.door_flying_ship_0.geometry} material={nodes.door_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]}>
+            <group position={[-3.374, 1.185, 0]}>
+              <mesh geometry={nodes.Line017_door_part_3_flying_ship_0.geometry} material={nodes.Line017_door_part_3_flying_ship_0.material} />
+              <mesh geometry={nodes.Line017_paddle_flying_ship_0.geometry} material={nodes.Line017_paddle_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[1.358, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship010_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship010_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship010_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship010_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[0.572, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship011_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship011_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship011_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship011_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[-0.213, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship012_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship012_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship012_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship012_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[-0.998, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship013_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship013_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship013_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship013_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[-1.784, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship014_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship014_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship014_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship014_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[-2.569, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship015_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship015_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship015_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship015_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[2.929, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship016_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship016_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship016_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship016_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[34.774, 2.247, 0]} rotation={[2.143, 1.55, 0.221]} scale={[0.614, 0.634, 0.845]}>
+            <group position={[-0.621, -42.192, -4.887]}>
+              <mesh geometry={nodes.paddle_flying_ship017_paddle_flying_ship_0.geometry} material={nodes.paddle_flying_ship017_paddle_flying_ship_0.material} />
+              <mesh geometry={nodes.paddle_flying_ship017_sail_flying_ship_0.geometry} material={nodes.paddle_flying_ship017_sail_flying_ship_0.material} />
+            </group>
+          </group>
+          <group position={[-9.524, 0.545, -2.16]} rotation={[-Math.PI / 2, 0, -Math.PI / 3]}>
+            <group position={[13.676, -2.165, -1.549]}>
+              <mesh geometry={nodes.door004_door_part_3_flying_ship_0.geometry} material={nodes.door004_door_part_3_flying_ship_0.material} />
+              <mesh geometry={nodes.door004_door_part_4_flying_ship_0.geometry} material={nodes.door004_door_part_4_flying_ship_0.material} />
+              <mesh geometry={nodes.door004_flying_ship_0.geometry} material={nodes.door004_flying_ship_0.material} />
+            </group>
+          </group>
+          <mesh geometry={nodes.rope_flying_ship_rope_flying_ship_0.geometry} material={nodes.rope_flying_ship_rope_flying_ship_0.material} position={[28.919, 59.565, 0.283]} rotation={[Math.PI / 2, -1.57, 0]} scale={[-1, 1, 1]} />
         </group>
       </group>
-      <group position={[567.006, 79.009, -49.502]} rotation={[0, 0, 0.424]} scale={13.63}>
-        <mesh geometry={nodes['5-acesspanel002_initialShadingGroup002_0'].geometry} material={materials['initialShadingGroup.002']} />
-        <mesh geometry={nodes['5-acesspanel002_phong1SG002_0'].geometry} material={materials['phong1SG.002']} />
-      </group>
-      <mesh geometry={nodes.wiper_low001_Material001_0.geometry} material={materials['Material.001']} position={[156.012, -46.79, -308.676]} rotation={[-1.569, 0.024, -0.158]} scale={191.429} />
-      <mesh geometry={nodes.airfresh_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.backdoor_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.backdoorwin_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.backlights_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={18.366} />
-      <mesh geometry={nodes.body_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.bumperback_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.bumperfront_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.dash_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.dashbottom_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.doorhandle_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.doorhandle_low001_Material3_0.geometry} material={materials.Material3} position={[323.622, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.doorhandle_low002_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.floor_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.frontdoors_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.frontgrill_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.frontinside_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.frontreflectors_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.frontrigthw_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.fronttire_low001_Material3_0.geometry} material={materials.Material3} position={[45.789, -142.951, -365.865]} rotation={[-Math.PI, 0, -Math.PI]} scale={198.645} />
-      <mesh geometry={nodes.frontwindow_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.headlights_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.hood_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.insidemirror_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.lock_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.motor_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.passdoors_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.passinside_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.Passwindows_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.rooflight_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.rooflight_low001_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.rooflight_low002_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.roofralis_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.seatback_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.seatback_low001_Material3_0.geometry} material={materials.Material3} position={[348.121, -30.786, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.seatcushon_low_Material3_0.geometry} material={materials.Material3} position={[348.121, -30.786, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.seatcushon_low001_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.sidemirrors_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.sidereflectors_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.SuspensionA_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.SuspensionA_low001_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.SuspensionA_low002_Material3_0.geometry} material={materials.Material3} position={[817.454, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.SuspensionA_low003_Material3_0.geometry} material={materials.Material3} position={[817.454, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.underconnectors_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[Math.PI, 0, Math.PI]} scale={[7.232, 7.618, 8.993]} />
-      <mesh geometry={nodes.underconnectors_low001_Material3_0.geometry} material={materials.Material3} position={[817.454, -42.337, -238.749]} rotation={[Math.PI, 0, Math.PI]} scale={[7.232, 7.618, 8.993]} />
-      <mesh geometry={nodes.underrail_low_Material2_0.geometry} material={materials.Material2} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.Underscrews_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.Underscrews_low001_Material3_0.geometry} material={materials.Material3} position={[154.664, -91.884, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.Underscrews_low002_Material3_0.geometry} material={materials.Material3} position={[817.454, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.Underscrews_low003_Material3_0.geometry} material={materials.Material3} position={[817.454, -91.884, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.wheel_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.windowback_low_Material3_0.geometry} material={materials.Material3} position={[154.664, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.windowborder_low_Material2_0.geometry} material={materials.Material2} position={[154.339, -42.337, -238.749]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.wiper_low_Material001_0.geometry} material={materials['Material.001']} position={[154.664, -42.337, -205.216]} rotation={[-Math.PI / 2, 0, 0]} scale={191.429} />
-      <mesh geometry={nodes.fronttire_low002_Material3_0.geometry} material={materials.Material3} position={[45.789, -142.951, 46.086]} rotation={[-Math.PI, 0, -Math.PI]} scale={198.645} />
-      <mesh geometry={nodes.fronttire_low003_Material3_0.geometry} material={materials.Material3} position={[-611.992, -142.951, 46.086]} rotation={[-Math.PI, 0, -Math.PI]} scale={198.645} />
-      <mesh geometry={nodes.fronttire_low004_Material3_0.geometry} material={materials.Material3} position={[-611.992, -142.951, -372.972]} rotation={[-Math.PI, 0, -Math.PI]} scale={198.645} />
-      <mesh geometry={nodes.fronttire_low005_Material3_0.geometry} material={materials.Material3} position={[544.498, 114.962, 2.491]} rotation={[-Math.PI / 2, -0.442, -1.571]} scale={159.279} />
-      <mesh geometry={nodes.Engine2_Engine2_0.geometry} material={materials.Engine2} position={[441.034, -2.622, -25.055]} scale={[0.276, 0.158, 0.276]} />
-      <mesh geometry={nodes.Engine2001_Engine2_0.geometry} material={materials.Engine2} position={[441.034, -2.622, -439.154]} scale={[0.276, 0.158, 0.276]} />
-      <mesh geometry={nodes.Engine2002_Engine2_0.geometry} material={materials.Engine2} position={[-221.843, -2.622, -439.154]} scale={[0.276, 0.158, 0.276]} />
-      <mesh geometry={nodes.Engine2003_Engine2_0.geometry} material={materials.Engine2} position={[-221.843, -2.622, -27.883]} scale={[0.276, 0.158, 0.276]} />
-      <mesh geometry={nodes['5-gun_default_0'].geometry} material={materials['default']} position={[-257.592, 211.959, -232.977]} rotation={[1.571, -1.558, 1.571]} scale={0.193} />
-      <mesh geometry={nodes.Big_Chochin_M_Material002_0.geometry} material={materials['Material.002']} position={[-28.103, 225.705, 9.274]} rotation={[-Math.PI / 2, 0, 0]} scale={0.381} />
-      <mesh geometry={nodes.Big_Chochin_M001_Material002_0.geometry} material={materials['Material.002']} position={[-28.103, 225.705, -487.974]} rotation={[-Math.PI / 2, 0, 0]} scale={0.381} />
-      <mesh geometry={nodes.hanger_BASIC_straight_hanger_BASIC_0.geometry} material={materials.hanger_BASIC} position={[453.178, 206.925, 2.627]} rotation={[-0.47, 0, 0]} scale={10.707} />
-      <mesh geometry={nodes.hanger_BASIC_straight001_hanger_BASIC_0.geometry} material={materials.hanger_BASIC} position={[453.178, 206.925, -479.834]} rotation={[-2.671, 0, 0]} scale={10.707} />
-      <mesh geometry={nodes.Plane001_Konsoll_0.geometry} material={materials.Konsoll} position={[203.325, 124.199, -10.571]} rotation={[-0.009, Math.PI / 2, 0]} scale={45.917} />
-      <mesh geometry={nodes.Object014_Knappar_0.geometry} material={materials.Knappar} position={[203.325, 124.199, -10.571]} rotation={[-0.009, Math.PI / 2, 0]} scale={45.917} />
-      <mesh geometry={nodes.Plane001001_Konsoll_0.geometry} material={materials.Konsoll} position={[203.325, 124.199, -463.559]} rotation={[0.009, -Math.PI / 2, 0]} scale={45.917} />
-      <mesh geometry={nodes.Object014001_Knappar_0.geometry} material={materials.Knappar} position={[203.325, 124.199, -463.559]} rotation={[0.009, -Math.PI / 2, 0]} scale={45.917} />
     </group>
   );
 }
 
-useGLTF.preload("./models/airplane/CyberCar.glb");
+useGLTF.preload("./models/airplane/CloudShip.glb");
