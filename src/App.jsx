@@ -1,6 +1,6 @@
 import SlideShow from './pages/SlideShow';
 import VrShow from './pages/VrShow';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter  as Router, Route, Switch } from 'react-router-dom';
 import React from 'react';
 
 function App() {
