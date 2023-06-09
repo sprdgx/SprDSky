@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useProgress } from "@react-three/drei";
 import { usePlay } from "../contexts/play";
 import backgroundMusic from '../assets/HipHopLofi.mp3';
+import { Link } from 'react-router-dom';
 
 export const Overlay = () => {
   const { progress } = useProgress();
@@ -81,9 +82,10 @@ export const Overlay = () => {
         <span class="yellow"></span>
         <span class="green"></span>
     </div>
-    <p>Explore Our Museum From Your Home Using VR</p>
-    <button className='VrShow' class='bn' onClick={GoToVrShow} > Go to VR Show</button>
-    
+    <p className='Vrp'>Explore Our Museum From Your Home Using VR</p>
+    <nav>
+      <Link class='bn' to="/vrshow">Go To VrShow</Link>
+    </nav>
 </div>
               
       </div>
