@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useProgress } from "@react-three/drei";
 import { usePlay } from "../contexts/play";
 import backgroundMusic from '../assets/HipHopLofi.mp3';
@@ -21,25 +21,42 @@ export const Overlay = () => {
     setIsMusicPlaying(false);
   };
 
+  const GoToVrShow = () => {
+    window.location.href = '/vrshow';
+  };
+
+
+  useEffect(() => {
+    if (end) {
+      setPlay(false);
+    }
+  }, [end, setPlay]);
 
   return (
     <div
-      className={`overlay ${play ? "overlay--disable" : ""}
+      className={`overlay ${play  ? "overlay--disable" : ""}
     ${hasScroll ? "overlay--scrolled" : ""}`}
     >
       <div
         className={`loader ${progress === 100 ? "loader--disappear" : ""}`}
       />
       {progress === 100 && (
-        <div className={`intro ${play ? "intro--disappear" : ""}`}>
+        <div className={`intro ${end || play ? "intro--disappear" : ''}`}>
           <h1 className="logo">
             SPUSEUM
             <div className="spinner">
               <div className="spinner__image" />
             </div>
           </h1>
+       
           {isMusicPlaying ? (
-          <button className="music" onClick={pauseMusic}>Stop Music</button>
+            <div class="loading-wave">
+              <button className="PauseMusic" onClick={pauseMusic}>Pause</button>
+              <div className="loading-bar"></div>
+              <div className="loading-bar"></div>
+              <div className="loading-bar"></div>
+              <div className="loading-bar"></div>
+            </div>
         ) : (
           <button className="music" onClick={playMusic}>Start Music</button>
         )}
@@ -56,8 +73,21 @@ export const Overlay = () => {
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
         <p className="outro__text">Wish you had a great flight with us...</p>
-        
       </div>
+      <div className={`outro ${end ? "outro--appear" : ""}`}>
+      <div class="card">
+    <div class="align">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+    </div>
+    <p>Explore Our Museum From Your Home Using VR</p>
+    <button className='VrShow' class='bn' onClick={GoToVrShow} > Go to VR Show</button>
+    
+</div>
+              
+      </div>
+
     </div>
   );
 };
