@@ -1,10 +1,10 @@
-import { ScrollControls } from "@react-three/drei";
+import { Loader, ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { EffectComposer, Noise } from "@react-three/postprocessing";
 import { Experience } from "../components/Experience";
 import { Overlay } from "../components/Overlay";
 import { usePlay } from "../contexts/play";
-import { useMemo } from "react";
+import { Suspense, useMemo } from "react";
 
 function SlideShow() {
   const { play, end } = usePlay();
@@ -18,12 +18,21 @@ function SlideShow() {
     []
   );
 
+const barStyles = {
+  backgroundColor: '#abaadd',
+}
+
+const containerStyles = {
+  backgroundColor: 'gray'
+
+};
 
 
   return (
     <div className="slideShow">
 
       <Canvas>
+        <Suspense>
         <color attach="background" args={["#ececec"]} />
         <ScrollControls
           pages={play && !end ? 20 : 0}
@@ -42,7 +51,9 @@ function SlideShow() {
           <Experience />
         </ScrollControls>
         {effects}
+        </Suspense>
       </Canvas>
+      <Loader barStyles={barStyles} containerStyles={containerStyles}  />
       <Overlay />
     </div>
   );
