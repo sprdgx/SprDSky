@@ -36,7 +36,7 @@ const containerStyles = {
         <color attach="background" args={["#ececec"]} />
         <ScrollControls
           pages={play && !end ? 20 : 0}
-          damping={0.5}
+          damping={0}
           style={{
             top: "10px",
             left: "0px",
