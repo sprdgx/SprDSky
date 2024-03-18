@@ -15,7 +15,7 @@ Welcome to Spuseum, a 3D website dedicated to showcasing virtual museum tours us
 
 ## 🌐 Live Demo
 
-Experience a live demo of Spuseum [here](https://example.com).
+Experience a live demo of Spuseum [here](https://spuseum.vercel.app).
 
 ## ✨ Features
 
