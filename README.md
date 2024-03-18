@@ -30,7 +30,7 @@ Experience a live demo of Spuseum [here](https://spuseum.vercel.app).
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/spuseum.git
+   git clone https://github.com/sprdgx/Spuseum.git
 
 2. **Go to The Directory:**
    
