@@ -10,7 +10,7 @@ Welcome to Spuseum, a 3D website dedicated to showcasing virtual museum tours us
  
 <div align="center">
   <div style="display: inline-block;">
-    <img src="https://s3.filebin.net/filebin/2d5548c17f045d786991152ae18143d3a2a6ee90beaad7fd667d23a0500d3173/cd8a0f0f15701fbf1c3d9bad0eab16bd5ec3dd2f14cfc65550f95f462eb61608?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7pMj6hGeoKewqmMQILjm%2F20240318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240318T032002Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D300&response-content-disposition=filename%3D%22Spuseum.gif%22&response-content-type=image%2Fgif&X-Amz-Signature=b2ab0f9130197bc812e25dc8fc4509a2d45f9a84a1d27f4e34a5e4e18570ba49" alt="Spuseum GIF 1" width="400px" />
+    <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum.gif" alt="Spuseum GIF 1" width="400px" />
   </div>
   <div style="display: inline-block;">
     <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif" alt="Spuseum GIF 2" width="400px" />
