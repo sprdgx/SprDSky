@@ -32,17 +32,17 @@ Experience a live demo of Spuseum [here](https://example.com).
    ```bash
    cd spuseum
    
-4. **Install dependencies:**
+3. **Install dependencies:**
 
    ```bash   
    npm install
 
-3. **Start the development server:**
+4. **Start the development server:**
 
    ```bash
    npm run dev
 
-   This command will start the Vite development server and open the project in your default web browser.
+This command will start the Vite development server and open the project in your default web browser.
 
-   📄 License
+**📄 License:**
 This project is licensed under the MIT License - see the LICENSE file for details.
