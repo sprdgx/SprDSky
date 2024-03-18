@@ -8,7 +8,14 @@
 
 Welcome to Spuseum, a 3D website dedicated to showcasing virtual museum tours using Three.js technology. This project features immersive animations and VR first-person simulations that allow users to explore a 3D world representing the museum's map.
  
-![Spuseum GIF](https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif) ![Spuseum GIF](https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif)
+<div align="center">
+  <div style="display: inline-block;">
+    <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif" alt="Spuseum GIF 1" width="400px" />
+  </div>
+  <div style="display: inline-block;">
+    <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif" alt="Spuseum GIF 2" width="400px" />
+  </div>
+</div>
 
 ## 🌐 Live Demo
 
