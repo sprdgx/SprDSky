@@ -26,9 +26,15 @@ Experience a live demo of Spuseum [here](https://example.com).
 
    ```bash
    git clone https://github.com/your-username/spuseum.git
+
+2. **Go to The Directory:**
    cd spuseum
-   Install dependencies: npm install
-   Start the development server: npm run dev
+   
+3. **Install dependencies:**   
+   npm install
+
+3. **Start the development server:**
+   npm run dev
 
    This command will start the Vite development server and open the project in your default web browser.
 
