@@ -1,11 +1,7 @@
 # ValidiElData - Advanced Data Validator Library
 
 Welcome to ValidiElData, an advanced data validation library for Node.js. This library is designed to simplify and enhance data validation processes in your applications, providing robust validation capabilities with ease.
- 
-<div align="center">
-  <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum.gif" alt="Spuseum GIF 1" width="450px" style="display: inline-block; margin-right: 20px;" />
-  <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif" alt="Spuseum GIF 2" width="450px" style="display: inline-block;" />
-</div>
+
 
 ## 🚀 Installation
 
@@ -53,6 +49,8 @@ Here's an example of how you can utilize ValidiElData to validate user data:
 4. **Prepare User Data and Validation Rules: Define your user data and the validation rules for each field.**
 
    ```bash
+    // Here's an example for 'username', 'password', 'email', and 'age' Which Are Already Default Validated:
+
     const userData = {
         username: 'user123',
         password: 'seqsdqdqsdqd',
@@ -66,3 +64,49 @@ Here's an example of how you can utilize ValidiElData to validate user data:
         email: { type: 'string', format: 'email' },
         age: { type: 'number', custom: 'ageValidator' },
     };
+
+5. **Validate User Data: Now, you're ready to validate the user data using ValidiElData's validiEZ method:**
+
+   ```bash
+    (async () => {
+        try {
+            const validationResult = await validator.validiEZ(userData, validationRules);
+
+            if (validationResult.isValid) {
+                console.log('User data is valid!');
+            } else {
+                console.error('Validation errors:', validationResult.errors);
+            }
+        } catch (error) {
+            console.error('Async validation error:', error);
+        }
+    })();
+
+In this example, we create a validator instance, define a custom validation rule for age, set up user data and validation rules, and then asynchronously validate the data using ValidiElData's validiEZ method. The library checks if the data meets the specified rules and provides detailed validation errors if any.
+
+## 🌟 Features
+
+  **Custom Validation Rules:**
+    Define and apply custom validation functions for specific data fields.
+
+  **Built-in Validators:**
+    Includes validators for common data types and formats such as strings, numbers, emails, etc.
+
+  **Asynchronous Validation:** 
+    Supports asynchronous validation for complex rules or external validations.
+
+  **Flexible Configuration:**
+    Configure validation rules using a simple syntax for maximum flexibility.
+    
+  **Error Handling:** 
+    Provides detailed error messages for validation failures.
+
+## 🤝 Contributing
+
+Contributions to ValidiElData are welcome! If you encounter bugs, have feature requests, or wish to contribute enhancements, please open an issue or submit a pull request on the [GitHub repository ](https://github.com/sprdgx/validieldata).
+
+## 📄 License
+
+ValidiElData is licensed under the MIT License.
+
+Thank you for choosing ValidiElData for your data validation needs! If you have any questions or need assistance, feel free to reach out. Happy validating! 🚀
