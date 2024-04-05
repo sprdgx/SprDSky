@@ -4,33 +4,31 @@
 Welcome to ValidiElData, an advanced data validation library for Node.js. This library is designed to simplify and enhance data validation processes in your applications, providing robust validation capabilities with ease.
 
 
-## 🚀 Getting Started
+    ## 🚀 Installation:
 
-1. **🚀 Installation:**
+        To start using ValidiElData in your Node.js project, you can install it via npm:
 
-    To start using ValidiElData in your Node.js project, you can install it via npm:
+            ```bash
+            npm install validieldata
 
-   ```bash
-   npm install validieldata
-
-2. **🔧 Usage:**
+    ## 🔧 Usage:
    
-    Here's an example of how you can utilize ValidiElData to validate user data:
+        Here's an example of how you can utilize ValidiElData to validate user data:
 
-   ```bash
-   cd spuseum
+            ```bash
+            cd spuseum
    
-3. **Install dependencies:**
+    ## Install dependencies:
 
-   ```bash   
-   npm install
+            ```bash   
+            npm install
 
-4. **Start the development server:**
+    ## Start the development server:
 
-   ```bash
-   npm run dev
+            ```bash
+            npm run dev
 
 This command will start the Vite development server and open the project in your default web browser.
 
-**📄 License:**
+## 📄 License:
 This project is licensed under the MIT License - see the LICENSE file for details.
