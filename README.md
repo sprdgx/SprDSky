@@ -1,32 +1,53 @@
+<div align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/3172/3172911.png" alt="Spuseum Logo" width="200px" />
+</div>
 
-# ValidiElData - Advanced Data Validator Library
+---
 
-Welcome to ValidiElData, an advanced data validation library for Node.js. This library is designed to simplify and enhance data validation processes in your applications, providing robust validation capabilities with ease.
+# Spuseum: 3D Museum Website
 
+Welcome to Spuseum, a 3D website dedicated to showcasing virtual museum tours using Three.js technology. This project features immersive animations and VR first-person simulations that allow users to explore a 3D world representing the museum's map.
+ 
+<div align="center">
+  <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum.gif" alt="Spuseum GIF 1" width="450px" style="display: inline-block; margin-right: 20px;" />
+  <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif" alt="Spuseum GIF 2" width="450px" style="display: inline-block;" />
+</div>
 
-    ## 🚀 Installation:
+## 🌐 Live Demo
 
-        To start using ValidiElData in your Node.js project, you can install it via npm:
+Experience a live demo of Spuseum [here](https://spuseum.vercel.app).
 
+## ✨ Features
 
-            npm install validieldata
+- 3D virtual museum tours
+- Immersive animations
+- VR first-person simulations
+- Interactive 3D map of the museum
+- Responsive design for various devices
 
-    ## 🔧 Usage:
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/sprdgx/Spuseum.git
+
+2. **Go to The Directory:**
    
-        Here's an example of how you can utilize ValidiElData to validate user data:
-
-            cd spuseum
+   ```bash
+   cd spuseum
    
-    ## Install dependencies:
+3. **Install dependencies:**
 
+   ```bash   
+   npm install
 
-            npm install
+4. **Start the development server:**
 
-    ## Start the development server:
-
-            npm run dev
+   ```bash
+   npm run dev
 
 This command will start the Vite development server and open the project in your default web browser.
 
-## 📄 License:
+**📄 License:**
 This project is licensed under the MIT License - see the LICENSE file for details.
