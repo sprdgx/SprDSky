@@ -15,7 +15,6 @@ Welcome to ValidiElData, an advanced data validation library for Node.js. This l
    
         Here's an example of how you can utilize ValidiElData to validate user data:
 
-            ```bash
             cd spuseum
    
     ## Install dependencies:
@@ -31,4 +30,3 @@ This command will start the Vite development server and open the project in your
 
 ## 📄 License:
 This project is licensed under the MIT License - see the LICENSE file for details.
-
