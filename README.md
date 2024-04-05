@@ -8,7 +8,7 @@ Welcome to ValidiElData, an advanced data validation library for Node.js. This l
 
         To start using ValidiElData in your Node.js project, you can install it via npm:
 
-            ```bash
+
             npm install validieldata
 
     ## 🔧 Usage:
@@ -20,15 +20,15 @@ Welcome to ValidiElData, an advanced data validation library for Node.js. This l
    
     ## Install dependencies:
 
-            ```bash   
+
             npm install
 
     ## Start the development server:
 
-            ```bash
             npm run dev
 
 This command will start the Vite development server and open the project in your default web browser.
 
 ## 📄 License:
 This project is licensed under the MIT License - see the LICENSE file for details.
+
