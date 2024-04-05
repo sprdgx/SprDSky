@@ -1,39 +1,22 @@
-<div align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/3172/3172911.png" alt="Spuseum Logo" width="200px" />
-</div>
 
----
+# ValidiElData - Advanced Data Validator Library
 
-# Spuseum: 3D Museum Website
+Welcome to ValidiElData, an advanced data validation library for Node.js. This library is designed to simplify and enhance data validation processes in your applications, providing robust validation capabilities with ease.
 
-Welcome to Spuseum, a 3D website dedicated to showcasing virtual museum tours using Three.js technology. This project features immersive animations and VR first-person simulations that allow users to explore a 3D world representing the museum's map.
- 
-<div align="center">
-  <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum.gif" alt="Spuseum GIF 1" width="450px" style="display: inline-block; margin-right: 20px;" />
-  <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif" alt="Spuseum GIF 2" width="450px" style="display: inline-block;" />
-</div>
-
-## 🌐 Live Demo
-
-Experience a live demo of Spuseum [here](https://spuseum.vercel.app).
-
-## ✨ Features
-
-- 3D virtual museum tours
-- Immersive animations
-- VR first-person simulations
-- Interactive 3D map of the museum
-- Responsive design for various devices
 
 ## 🚀 Getting Started
 
-1. **Clone the repository:**
+1. **🚀 Installation:**
+
+    To start using ValidiElData in your Node.js project, you can install it via npm:
 
    ```bash
-   git clone https://github.com/sprdgx/Spuseum.git
+   npm install validieldata
 
-2. **Go to The Directory:**
+2. **🔧 Usage:**
    
+    Here's an example of how you can utilize ValidiElData to validate user data:
+
    ```bash
    cd spuseum
    
