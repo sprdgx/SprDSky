@@ -1,53 +1,68 @@
-<div align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/3172/3172911.png" alt="Spuseum Logo" width="200px" />
-</div>
+# ValidiElData - Advanced Data Validator Library
 
----
-
-# Spuseum: 3D Museum Website
-
-Welcome to Spuseum, a 3D website dedicated to showcasing virtual museum tours using Three.js technology. This project features immersive animations and VR first-person simulations that allow users to explore a 3D world representing the museum's map.
+Welcome to ValidiElData, an advanced data validation library for Node.js. This library is designed to simplify and enhance data validation processes in your applications, providing robust validation capabilities with ease.
  
 <div align="center">
   <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum.gif" alt="Spuseum GIF 1" width="450px" style="display: inline-block; margin-right: 20px;" />
   <img src="https://github.com/sprdgx/WebGifs/raw/main/Spuseum2.gif" alt="Spuseum GIF 2" width="450px" style="display: inline-block;" />
 </div>
 
-## 🌐 Live Demo
+## 🚀 Installation
 
-Experience a live demo of Spuseum [here](https://spuseum.vercel.app).
+To start using ValidiElData in your Node.js project, you can install it via npm:
 
-## ✨ Features
+## 🔧 Usage
 
-- 3D virtual museum tours
-- Immersive animations
-- VR first-person simulations
-- Interactive 3D map of the museum
-- Responsive design for various devices
+Here's an example of how you can utilize ValidiElData to validate user data:
 
-## 🚀 Getting Started
-
-1. **Clone the repository:**
+1. **Import ValidiElData: Import ValidiElData into your project using require:**
 
    ```bash
-   git clone https://github.com/sprdgx/Spuseum.git
+   const ValidiElData = require('validieldata');
 
-2. **Go to The Directory:**
+2. **Initialize the Validator: Create an instance of the validator:**
    
    ```bash
-   cd spuseum
+   const validator = new ValidiElData();
    
-3. **Install dependencies:**
+3. **Add Custom Validation Function: You can add a custom validation function for a specific field :**
 
    ```bash   
-   npm install
+    // Add custom validation function
 
-4. **Start the development server:**
+    validator.ZidWchThab('customValidator', async (value) => {
+    // Example custom validation logic
+    return value === 'valid';
+    });
+
+    //  For example lets add a custom validation function for the 'age' field:
+
+    validator.ZidWchThab('ageValidator', async (value) => {
+    const minAge = 18;
+    const maxAge = 100;
+
+        if (typeof value !== 'number') {
+            return false; // Age must be a number
+        }
+
+        return value >= minAge && value <= maxAge;
+    });
+
+
+
+4. **Prepare User Data and Validation Rules: Define your user data and the validation rules for each field.**
 
    ```bash
-   npm run dev
+    const userData = {
+        username: 'user123',
+        password: 'seqsdqdqsdqd',
+        email: 'user@example.com',
+        age: 25, // Example age value
+    };
 
-This command will start the Vite development server and open the project in your default web browser.
-
-**📄 License:**
-This project is licensed under the MIT License - see the LICENSE file for details.
+    const validationRules = {
+        username: { type: 'string', minLength: 4, maxLength: 20 },
+        password: { type: 'string', minLength: 8 },
+        email: { type: 'string', format: 'email' },
+        age: { type: 'number', custom: 'ageValidator' },
+    };
